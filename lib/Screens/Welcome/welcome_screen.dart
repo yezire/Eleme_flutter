@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../../components/background.dart';
 import '../../responsive.dart';
+import '../../size_config.dart';
 import 'components/login_signup_btn.dart';
 import 'components/welcome_image.dart';
+import '../Welcome/components/splash.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -51,7 +53,9 @@ class MobileWelcomeScreen extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        const WelcomeImage(),
+        //const WelcomeImage(),
+
+        const Splash(),
         Row(
           children: const [
             Spacer(),

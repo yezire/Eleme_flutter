@@ -19,10 +19,14 @@ class LoginForm extends StatelessWidget {
             textInputAction: TextInputAction.next,
             cursorColor: kPrimaryColor,
             onSaved: (email) {},
-            decoration: InputDecoration(
-              hintText: "Your email",
+            decoration: const InputDecoration(
+              hintText: "请输入手机号",
+              hintStyle: TextStyle(
+                color:Colors.white,
+                fontSize: 14,
+              ),
               prefixIcon: Padding(
-                padding: const EdgeInsets.all(defaultPadding),
+                padding: EdgeInsets.all(defaultPadding),
                 child: Icon(Icons.person),
               ),
             ),
@@ -33,10 +37,14 @@ class LoginForm extends StatelessWidget {
               textInputAction: TextInputAction.done,
               obscureText: true,
               cursorColor: kPrimaryColor,
-              decoration: InputDecoration(
-                hintText: "Your password",
+              decoration: const InputDecoration(
+                hintStyle: TextStyle(
+                  color:Colors.white,
+                  fontSize: 14,
+                ),
+                hintText: "请输入密码",
                 prefixIcon: Padding(
-                  padding: const EdgeInsets.all(defaultPadding),
+                  padding: EdgeInsets.all(defaultPadding),
                   child: Icon(Icons.lock),
                 ),
               ),
@@ -47,8 +55,8 @@ class LoginForm extends StatelessWidget {
             tag: "login_btn",
             child: ElevatedButton(
               onPressed: () {},
-              child: Text(
-                "Login".toUpperCase(),
+              child: const Text(
+                "登录"
               ),
             ),
           ),

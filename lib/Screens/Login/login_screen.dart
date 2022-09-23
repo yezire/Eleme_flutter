@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_auth/responsive.dart';
 
 import '../../components/background.dart';
+import '../../size_config.dart';
 import 'components/login_form.dart';
 import 'components/login_screen_top_image.dart';
 
@@ -10,6 +11,7 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //SizeConfig().init(context);
     return Background(
       child: SingleChildScrollView(
         child: Responsive(
