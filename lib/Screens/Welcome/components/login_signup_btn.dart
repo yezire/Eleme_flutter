@@ -21,13 +21,13 @@ class LoginAndSignupBtn extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return LoginScreen();
+                    return const LoginScreen();
                   },
                 ),
               );
             },
-            child: Text(
-              "Login".toUpperCase(),
+            child: const Text(
+              "登陆",
             ),
           ),
         ),
@@ -45,9 +45,9 @@ class LoginAndSignupBtn extends StatelessWidget {
           },
           style: ElevatedButton.styleFrom(
               primary: kPrimaryLightColor, elevation: 0),
-          child: Text(
-            "Sign Up".toUpperCase(),
-            style: TextStyle(color: Colors.black),
+          child: const Text(
+            "注册",
+            style: TextStyle(color: Colors.white),
           ),
         ),
       ],

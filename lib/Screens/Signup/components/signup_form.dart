@@ -19,10 +19,14 @@ class SignUpForm extends StatelessWidget {
             textInputAction: TextInputAction.next,
             cursorColor: kPrimaryColor,
             onSaved: (email) {},
-            decoration: InputDecoration(
-              hintText: "Your email",
+            decoration: const InputDecoration(
+              hintStyle: TextStyle(
+                color:Colors.white,
+                fontSize: 14,
+              ),
+              hintText: "请输入手机号",
               prefixIcon: Padding(
-                padding: const EdgeInsets.all(defaultPadding),
+                padding: EdgeInsets.all(defaultPadding),
                 child: Icon(Icons.person),
               ),
             ),
@@ -33,10 +37,14 @@ class SignUpForm extends StatelessWidget {
               textInputAction: TextInputAction.done,
               obscureText: true,
               cursorColor: kPrimaryColor,
-              decoration: InputDecoration(
-                hintText: "Your password",
+              decoration: const InputDecoration(
+                hintStyle: TextStyle(
+                  color:Colors.white,
+                  fontSize: 14,
+                ),
+                hintText: "请输入密码",
                 prefixIcon: Padding(
-                  padding: const EdgeInsets.all(defaultPadding),
+                  padding: EdgeInsets.all(defaultPadding),
                   child: Icon(Icons.lock),
                 ),
               ),
@@ -45,7 +53,7 @@ class SignUpForm extends StatelessWidget {
           const SizedBox(height: defaultPadding / 2),
           ElevatedButton(
             onPressed: () {},
-            child: Text("Sign Up".toUpperCase()),
+            child: Text("注册"),
           ),
           const SizedBox(height: defaultPadding),
           AlreadyHaveAnAccountCheck(
