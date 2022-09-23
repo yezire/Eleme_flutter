@@ -7,11 +7,10 @@
  * 
  */
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import 'package:flutter_auth/Screens/Home/components/search_field.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../constants.dart';
-import 'search_bar.dart';
 
 class HomeHeader extends StatelessWidget {
   const HomeHeader({
@@ -22,18 +21,25 @@ class HomeHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         color: HPrimaryColor,
-        child: Column(
-            children: [
+        child: SafeArea(
+            child: Column(children: [
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: const [
+              SizedBox(
+                width: 12,
+              ),
               Text(
                 "沈阳市规划大厦",
                 style: TextStyle(
-                    overflow: TextOverflow.ellipsis,
-                    fontSize: 18,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w400),
+                  overflow: TextOverflow.ellipsis,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              SizedBox(
+                width: 10,
               ),
               Icon(
                 Icons.location_on,
@@ -41,37 +47,63 @@ class HomeHeader extends StatelessWidget {
               ),
             ],
           ),
-              SizedBox(
-                height: 15.h,
-              ),
+          const SizedBox(
+            height: 15,
+          ),
           Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              // CircleAvatar(
-              //   radius: 18.h,
-              //   child: ClipOval(
-              //     child: Image.asset(
-              //       "assets/images/profile.jpg",
-              //       fit: BoxFit.cover,
-              //       width: double.infinity,
-              //       height: double.infinity,
-              //     ),
-              //   ),
-              // ),
-              SizedBox(
-                width: 15.w,
+              const SizedBox(
+                width: 15,
               ),
-              const Expanded(
-                child: SearchBar(),
+              Expanded(
+                // child: SearchBar(),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    SearchField(),
+                    IconButton(
+                      icon: SvgPicture.asset("assets/icons/cart.svg",
+                          color: Colors.white),
+                      onPressed: () => {},
+                    ),
+                    IconButton(
+                      icon: SvgPicture.asset("assets/icons/message.svg",
+                          color: Colors.white),
+                      onPressed: () => {},
+                    ),
+                  ],
+                ),
               ),
-              SizedBox(
-                width: 15.w,
+              const SizedBox(
+                width: 15,
               ),
             ],
           ),
-              SizedBox(
-                height: 15.h,
-              ),
-        ]));
+          const SizedBox(
+            height: 15,
+          ),
+        ])));
   }
+// @override
+// Widget build(BuildContext context) {
+//   return Padding(
+//     padding:
+//     EdgeInsets.symmetric(horizontal:20),
+//     child: Row(
+//       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//       children: [
+//         SearchField(),
+//         IconButton(
+//           icon: SvgPicture.asset("assets/icons/cart.svg"),
+//           onPressed: () => {},
+//         ),
+//         IconButton(
+//           icon: SvgPicture.asset("assets/icons/message.svg"),
+//           onPressed: () => {},
+//         ),
+//       ],
+//     ),
+//   );
+
 }
