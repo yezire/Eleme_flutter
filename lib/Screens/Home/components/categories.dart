@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 import '../../../size_config.dart';
+import '../../Business/bussiness_screen.dart';
 
 class Categories extends StatelessWidget {
   @override
@@ -23,7 +26,7 @@ class Categories extends StatelessWidget {
           (index) => CategoryCard(
             icon: categories[index]["icon"],
             text: categories[index]["text"],
-            press: () {},
+            press: ()=>Get.to(BusinessScreen()),
           ),
         ),
       ),

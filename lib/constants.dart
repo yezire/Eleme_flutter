@@ -18,5 +18,5 @@ const Color light = Color(0xFFE6E9ED);
 const Color textWhite = Color(0xFFFFFFFF);
 const Color grey = Color(0xFF55606D);
 const HbgColor = Color.fromRGBO(150, 192, 255, 1);
-
+const Color? ratingBG = Colors.yellow;
 double HdefaultPadding = 20.w;

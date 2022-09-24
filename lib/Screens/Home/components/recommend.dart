@@ -54,6 +54,7 @@ class Recommend extends StatelessWidget {
                                   builder: (context) => StoreDetailPage(
                                     image: dishes['image'],
                                     name: dishes['name'],
+
                                   )));
                         },
                         child: Container(

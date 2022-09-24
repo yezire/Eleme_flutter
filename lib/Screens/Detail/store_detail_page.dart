@@ -49,7 +49,7 @@ class _StoreDetailPageState extends State<StoreDetailPage> {
           Container(
             decoration: BoxDecoration(
                 image: DecorationImage(
-                    image: NetworkImage(widget.image), fit: BoxFit.cover)),
+                    image: AssetImage(widget.image), fit: BoxFit.cover)),
           ),
           Container(
             decoration: BoxDecoration(color: Colors.black.withOpacity(0.5)),
