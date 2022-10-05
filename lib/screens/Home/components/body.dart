@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/Screens/Home/components/recommend.dart';
 
+import '../../../constants.dart';
 import '../../../size_config.dart';
 import 'categories.dart';
 import 'discount_banner.dart';
@@ -17,8 +18,10 @@ class Body extends StatelessWidget {
         const HomeHeader(),
           const SizedBox(height: 10),
               Container(
-                width:410,
+                //width:410,
                 height:120,
+                width: double.infinity,
+                decoration: const BoxDecoration(color: light),
                 child: Image.asset(
                   "assets/images/foodie.png",
                   fit: BoxFit.cover,

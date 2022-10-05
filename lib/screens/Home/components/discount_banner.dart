@@ -11,8 +11,10 @@ class DiscountBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(children: [
       Container(
+        width: double.infinity,
+        decoration: const BoxDecoration(color: light),
         height: 150,
-        width: 410,
+        //width: 410,
         child: Image.asset(
           "assets/images/discount.jpg",
           fit: BoxFit.cover,

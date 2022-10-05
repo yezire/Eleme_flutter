@@ -4,6 +4,9 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
 import '../Screens/Home/home_screen.dart';
+import '../Screens/LoginSuccess/login_success_screen.dart';
+import '../Screens/order/order_screen.dart';
+import '../Screens/profile/profile_screen.dart';
 import '../constants.dart';
 import '../enums.dart';
 
@@ -43,7 +46,7 @@ class CustomBottomNavBar extends StatelessWidget {
                 icon: SvgPicture.asset(
                   "assets/icons/home.svg",
                   color: MenuState.home == selectedMenu
-                      ? kPrimaryColor
+                      ? HPrimaryColor
                       : inActiveIconColor,
                 ),
                 onPressed: () =>
@@ -51,20 +54,20 @@ class CustomBottomNavBar extends StatelessWidget {
               ),
               IconButton(
                 icon: SvgPicture.asset("assets/icons/order.svg",
-                  color: MenuState.profile == selectedMenu
-                  ? kPrimaryColor
+                  color: MenuState.order == selectedMenu
+                  ? HPrimaryColor
                   : inActiveIconColor,
                 ),
-                onPressed: () {},
+                onPressed: () => Get.to( LoginSuccessScreen())
               ),
               IconButton(
                 icon: SvgPicture.asset(
                   "assets/icons/person.svg",
                   color: MenuState.profile == selectedMenu
-                      ? kPrimaryColor
+                      ? HPrimaryColor
                       : inActiveIconColor,
                 ),
-                onPressed: () => {}
+                onPressed: () => Get.to(const ProfileScreen())
               ),
             ],
           )),

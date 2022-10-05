@@ -55,12 +55,12 @@ class ListItem extends StatelessWidget {
                             Icon(
                               Icons.star,
                               color: ratingBG,
-                              size: 10.0,
+                              size: 18.0,
                             ),
                             Text(
                               dish["rating"],
                               style: TextStyle(
-                                fontSize: 10.0,
+                                fontSize: 14.0,
                               ),
                             ),
                           ],
@@ -75,7 +75,7 @@ class ListItem extends StatelessWidget {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(3.0)),
                       child: Padding(
-                        padding: EdgeInsets.all(4.0),
+                        padding: EdgeInsets.fromLTRB(4,6,4,4.0),
                         child: Text(
                           " OPEN",
                           style: TextStyle(

@@ -1,46 +1,86 @@
 const List productItems = [
   {
-    "name": "Bacon Egg Cheese Biscuit Meal",
+    "name": "纯肉鲜肉（水饺）",
     "image":
-        "https://d1ralsognjng37.cloudfront.net/3915dacd-505e-48ed-81d6-a0eea9c067cf.jpeg",
-    "price": "\$ 5.45",
-    "discount": "\$ 6.75"
+        "assets/images/pt_01.png",
+    "price": "16.00",
+    "explain":"纯肉馅饺子",
+    "discount": "\$ 6.75",
+    "price_d":16.00
   },
   {
-    "name": "Big Breakfast with Hotcakes",
+    "name": "玉米鲜肉（水饺）",
     "image":
-        "https://d1ralsognjng37.cloudfront.net/a456fb02-790a-465c-8a8d-814d2904eb7a.jpeg",
-    "price": "\$ 5.99",
+    "assets/images/pt_02.png",
+    "price": "15.00",
+    "explain":"玉米清香",
+    "price_d":15.00,
     "discount": "\$ 7.21"
   },
   {
-    "name": "Hash Browns",
+    "name": "虾仁三鲜（蒸饺）",
     "image":
-        "https://d1ralsognjng37.cloudfront.net/41b09216-332b-4d65-a705-ccb3ad0f3964.jpeg",
-    "price": "\$ 1.46",
+    "assets/images/pt_03.png",
+    "price": "20.00",
+    "explain":"三鲜馅饺子",
+    "price_d":20.00,
     "discount": "\$ 3.65"
   },
   {
-    "name": "Big Breakfast",
+    "name": "素三鲜（蒸饺）",
     "image":
-        "https://d1ralsognjng37.cloudfront.net/6d9d7a46-6283-4627-ae51-436a96c03e76.jpeg",
-    "price": "\$ 5.69",
+    "assets/images/pt_04.png",
+    "price": "15.00",
+    "explain":"韭菜鸡蛋虾仁",
+    "price_d":15.00,
     "discount": "\$ 7.00"
   },
   {
-    "name": "Apple Pie",
+    "name": "角瓜鸡蛋（蒸饺）",
     "image":
-        "https://d1ralsognjng37.cloudfront.net/a5af8311-9b41-403a-94fe-30c2b166b39b.jpeg",
-    "price": "\$ 1.49",
+    "assets/images/pt_05.png",
+    "price": "15.00",
+    "explain":"角瓜清香",
+    "price_d":15.00,
     "discount": "\$ 3.00"
   },
   {
-    "name": "2 Cookies",
+    "name": "小白菜肉（水饺）",
     "image":
-        "https://d1ralsognjng37.cloudfront.net/c4273c09-614c-4624-9885-e438d126ce9f.jpeg",
-    "price": "\$ 1.29",
+    "assets/images/pt_06.png",
+    "price": "16.00",
+    "price_d":16.00,
+    "explain":"小白菜鲜肉",
     "discount": "\$ 2.50"
   },
+  {
+    "name": "芹菜牛肉（水饺）",
+    "image":
+    "assets/images/pt_07.png",
+    "price": "22.00",
+    "price_d":22.00,
+    "explain":"芹菜牛肉",
+    "discount": "\$ 2.50"
+  },
+  {
+    "name": "虾腰鲜肉（蒸饺）",
+    "image":
+    "assets/images/pt_08.png",
+    "price": "25.00",
+    "explain":"虾仁腰子",
+    "price_d":25.00,
+    "discount": "\$ 2.50"
+  },
+  {
+    "name": "青椒鲜肉（蒸饺）",
+    "image":
+    "assets/images/pt_10.png",
+    "price": "18.00",
+    "explain":"青椒鲜肉",
+    "price_d":18.00,
+    "discount": "\$ 2.50"
+  },
+
 ];
 
 const List drinkItems = [

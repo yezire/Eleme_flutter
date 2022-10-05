@@ -11,15 +11,18 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        SizedBox(height: SizeConfig.screenHeight * 0.04),
+
+        SizedBox(height: SizeConfig.screenHeight * 0.15),
         Image.asset(
-          "assets/images/success.png",
+          "assets/images/pay.jpg",
           height: SizeConfig.screenHeight * 0.4, //40%
         ),
-        SizedBox(height: SizeConfig.screenHeight * 0.08),
+        SizedBox(height: SizeConfig.screenHeight * 0.04),
         const Text(
-          "Login Success",
+          "支付成功",
           style: TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.bold,
@@ -27,15 +30,15 @@ class Body extends StatelessWidget {
           ),
         ),
         Spacer(),
-        SizedBox(
-          width: SizeConfig.screenWidth * 0.6,
-          child: DefaultButton(
-            text: "去首页",
-            press: () {
-             Get.to(HomeScreen());
-            },
-          ),
-        ),
+        // SizedBox(
+        //   width: SizeConfig.screenWidth * 0.6,
+        //   child: DefaultButton(
+        //     text: "去首页",
+        //     press: () {
+        //      Get.to(HomeScreen());
+        //     },
+        //   ),
+        // ),
         Spacer(),
       ],
     );

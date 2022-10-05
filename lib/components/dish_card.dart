@@ -56,7 +56,7 @@ class DishCard extends StatelessWidget {
                   height: 5,
                 ),
                 Text(
-                  "By " + dish["store"],
+                  dish["store"],
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     color: grey,
@@ -71,11 +71,11 @@ class DishCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                    SvgPicture.asset("clock_icon.svg"),
-                    SizedBox(
-                      width: 5,
-                    ),
+                    // SizedBox(
+                    //   width: 5,
+                    // ),
                     Text(
-                      "Est: " + dish["delivery_time"],
+                      "派送时间: " + dish["delivery_time"],
                       style: TextStyle(
                           color:HPrimaryColor,
                           fontSize: 13,

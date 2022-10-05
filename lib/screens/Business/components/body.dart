@@ -25,8 +25,9 @@ class Body extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                       builder: (context) => StoreDetailPage(
-                        image: dishes['image'],
-                        name: dishes['name'],
+                        dish:dishes,
+                        // image: dishes['image'],
+                        // name: dishes['name'],
                       )));
             },
             child: Container(
