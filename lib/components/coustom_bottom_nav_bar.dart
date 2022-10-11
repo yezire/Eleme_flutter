@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_auth/screens/order/components/order_confirm/order_confirm_screen.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
 import '../Screens/Home/home_screen.dart';
-import '../Screens/LoginSuccess/login_success_screen.dart';
-import '../Screens/order/order_screen.dart';
+
 import '../Screens/profile/profile_screen.dart';
 import '../constants.dart';
 import '../enums.dart';
+import '../screens/PaySuccess/pay_success_screen.dart';
+import '../screens/myOrder/index.dart';
+import '../screens/order/components/order_detail/order_detail.dart';
+import '../screens/order/components/order_remark/order_remark.dart';
 
 class CustomBottomNavBar extends StatelessWidget {
   const CustomBottomNavBar({
@@ -58,7 +62,8 @@ class CustomBottomNavBar extends StatelessWidget {
                   ? HPrimaryColor
                   : inActiveIconColor,
                 ),
-                onPressed: () => Get.to( LoginSuccessScreen())
+                 onPressed: () => Get.to( Order())
+                 // onPressed: () => Get.to(OrderConfirm())
               ),
               IconButton(
                 icon: SvgPicture.asset(

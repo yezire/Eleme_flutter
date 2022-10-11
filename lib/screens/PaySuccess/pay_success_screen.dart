@@ -5,7 +5,7 @@ import '../../constants.dart';
 import '../../enums.dart';
 import 'components/body.dart';
 
-class LoginSuccessScreen extends StatelessWidget {
+class PaySuccessScreen extends StatelessWidget {
   static String routeName = "/login_success";
   @override
   Widget build(BuildContext context) {

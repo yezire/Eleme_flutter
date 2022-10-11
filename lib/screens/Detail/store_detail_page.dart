@@ -8,7 +8,10 @@ import 'package:get/get_core/src/get_main.dart';
 import '../../components/toast.dart';
 import '../../constants.dart';
 import '../../data/product_json.dart';
-import '../LoginSuccess/login_success_screen.dart';
+
+import '../PaySuccess/pay_success_screen.dart';
+import '../order/components/order_confirm/order_confirm_screen.dart';
+import '../order/components/order_detail/order_detail.dart';
 import '../order/order_screen.dart';
 import 'components/GHCountItemWidget.dart';
 
@@ -348,7 +351,7 @@ class _StoreDetailPageState extends State<StoreDetailPage> {
                   borderRadius: BorderRadius.circular(12),
                   color: HPrimaryColor),
               child: GestureDetector(
-                onTap: () => Get.to(LoginSuccessScreen()),
+                onTap: () => Get.to(OrderConfirm()),
                 // onTap:()=>toastInfo(msg: '密码不能小于6位'),
                 child: Padding(
                   padding: const EdgeInsets.only(left: 20, right: 20),

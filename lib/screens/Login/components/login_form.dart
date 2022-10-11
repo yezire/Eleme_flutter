@@ -1,6 +1,9 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
+import '../../../Screens/Home/home_screen.dart';
 import '../../../api/user.dart';
 import '../../../api/user_api.dart';
 import '../../../components/already_have_an_account_acheck.dart';
@@ -96,8 +99,8 @@ class _LoginFormState extends State<LoginForm>{
           Hero(
             tag: "login_btn",
             child: ElevatedButton(
-              //onPressed: () {},
-              onPressed: () => _handleSignIn(),
+              onPressed: () =>Get.to(HomeScreen()),
+              //onPressed: () => _handleSignIn(),
                 child: const Text(
                 "登录"
               ),
